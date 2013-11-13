@@ -24,6 +24,8 @@ typedef NS_ENUM(NSUInteger, MRProgressOverlayViewMode){
     MRProgressOverlayViewModeCheckmark,
     /** Shows a cross. (MRCrossIconView) */
     MRProgressOverlayViewModeCross,
+    /** Shows a exclamation mark. (MRExclamationMarkIconView) */
+    MRProgressOverlayViewModeExclamationMark,
     /** Shows a custom view. (UIView) */
     MRProgressOverlayViewModeCustom,
 };

@@ -100,3 +100,27 @@
 }
 
 @end
+
+
+@implementation MRExclamationMarkIconView
+
+- (UIBezierPath *) path
+{
+    UIBezierPath *path = [UIBezierPath new];
+    
+    const double relativePadding = 0.2;
+    CGSize size = self.bounds.size;
+    double min = relativePadding;
+    double max = 1 - relativePadding;
+    [path moveToPoint:CGPointMake(size.width / 2, size.height * min)];
+    [path addLineToPoint:CGPointMake(size.width / 2, size.height * max - 10)];
+    
+    UIBezierPath *dotPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width / 2 - 0.5, size.height * max - 0.5, 1, 1)];
+    [dotPath fill];
+    
+    [path appendPath:dotPath];
+    
+    return path;
+}
+
+@end

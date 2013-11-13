@@ -305,6 +305,9 @@ static void *MRProgressOverlayViewObservationContext = &MRProgressOverlayViewObs
         case MRProgressOverlayViewModeCross:
             return [self createCrossIconView];
             
+        case MRProgressOverlayViewModeExclamationMark:
+            return [self createExclamationMarkIconView];
+            
         case MRProgressOverlayViewModeCustom:
             return [self createCustomView];
     }
@@ -357,6 +360,11 @@ static void *MRProgressOverlayViewObservationContext = &MRProgressOverlayViewObs
     // Create cross icon view for cross mode
     MRCrossIconView *crossIconView = [MRCrossIconView new];
     return crossIconView;
+}
+
+- (MRIconView *) createExclamationMarkIconView
+{
+    return [MRExclamationMarkIconView new];
 }
 
 - (UIView *)createCustomView {

@@ -618,13 +618,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="PUL-2f-cRI" customClass="MRCheckmarkIconView">
-                                <rect key="frame" x="85" y="110" width="150" height="150"/>
+                                <rect key="frame" x="85" y="110" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="4sh-j2-Iq5" customClass="MRCrossIconView">
-                                <rect key="frame" x="85" y="280" width="150" height="150"/>
+                                <rect key="frame" x="85" y="234" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="6aY-mS-0Wy" customClass="MRExclamationMarkIconView">
+                                <rect key="frame" x="85" y="353" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>

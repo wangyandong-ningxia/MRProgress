@@ -37,3 +37,10 @@
 @interface MRCrossIconView : MRIconView
 
 @end
+
+/**
+ Draws a exclamation mark
+ */
+@interface MRExclamationMarkIconView : MRIconView
+
+@end
