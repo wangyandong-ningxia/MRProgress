@@ -115,10 +115,14 @@
     [path moveToPoint:CGPointMake(size.width / 2, size.height * min)];
     [path addLineToPoint:CGPointMake(size.width / 2, size.height * max - 10)];
     
-    UIBezierPath *dotPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width / 2 - 0.5, size.height * max - 0.5, 1, 1)];
-    [dotPath fill];
+//    UIBezierPath *dotPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width / 2 - 0.5, size.height * max - 0.5, 1, 1)];
+//    [dotPath fill];
+//    [path appendPath:dotPath];
     
-    [path appendPath:dotPath];
+    [path moveToPoint:CGPointMake(size.width / 2 - 0.5, size.height * max - 0.5)];
+    [path addLineToPoint:CGPointMake(size.width / 2 - 0.5, size.height * max + 1.5)];
+    [path moveToPoint:CGPointMake(size.width / 2 + 0.5, size.height * max - 0.5)];
+    [path addLineToPoint:CGPointMake(size.width / 2 + 0.5, size.height * max + 1.5)];
     
     return path;
 }
